@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+        <div class="nav-wrapper"> 
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="projects.html">Projects</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="https://github.com/khoainho">GitHub</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="photos.html">Photos</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="contacts.html">Contacts</a>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="brand">
+                    <div>KHOA NGUYEN</div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div class="projects">
+    <button class="collapsible">Celes Crypto</button>
+    <div class="content">
+        <p>4/20/2021</p>
+        <p>Due to the recent surge of interest in cryptocurrency, many people have flocked into the space causing the price of many well-known cryptos to shoot up to the Moon. Bitcoin and Ethereum are the primary examples of this. Many of these cryptocurrencies were originally established with the intention of becoming a decentralized currency completely independent from any regulator or government around the world. This has not been the case recently as more and more people look toward cryptos and other NFTs as an investment and a way to get rich quickly, much different from their original intention.
+            My friends and I are in the process of creating a brand-new cryptocurrency called Celes. The name Celes has a Latin origin meaning “heavenly”. Our world is full of borders and barriers not only between countries but cultures, nevertheless heaven does not have such a thing. We want Celes to be a cross-border currency and simplify trades as well as reduce the cost of doing business around the world. The U.S. dollar has long been accepted as the standard for global trades because of its widespread use and the reputation of the U.S. government as a premier superpower around the world. A global currency like the U.S. dollar has the overall aim to remain stable and resistant to many different types of disturbances both domestically and internationally like government regulations or trade wars. This has not been the case especially based on the recent events that happened around the world. Due to the COVID 19 pandemic, the U.S. government has pushed out many different stimulus plans to boost its economic recovery, but this also inadvertently increased its money supply. According to the M1 money supply chart published by the Federal Economic Research Data (FRED), the U.S. dollar has seen its biggest increase by more than 22% in just the last few years.
+        </p>
+        <img class="pics-FRED" src="pics/fredgraph.png" alt="FRED">
+        <p>Source: Board of Governors of the Federal Reserve System (US) fred.stlouisfed.org
+            With this recent dramatic increase of the U.S. dollar money supply, many people are fearing imminent inflation. Countries like China are looking at this as an opportunity to take its currency the Yuan and leapfrog over the U.S. dollar’s place as the new global standard. Looking forward to a world where China has control over a large part of the worldwide trade is extremely dangerous, but this is where Celes comes into place. As a decentralized currency, Celes will be free from any governmental influences or market manipulations. This will usher in a new age of a truly free capitalist world that is free from many government regulations and conflicts between countries.
+            Now you may ask: “Khoa, what is the difference between Celes and the thousands of cryptos that are floating around the world today?”. This is a great question because unlike many of the cryptos you can buy today, we plan to host our own chain/ liquidity pool. This will offer us the ability to let everyday people deploy smart contracts for a much more affordable price when compared to the Ethereum blockchain. At its current state deploying a simple smart contract on the Ethereum blockchain can cost up to hundreds if not thousands of dollars. Having to pay a huge fee for every time you need to deploy a contract is completely impractical for your average Joe let alone something more complex like a business contract. The overall aim of this project will be to make transactions on cryptos more accessible and affordable for everyday people and businesses. Thank you for taking out the time of your day to read this and we will publish more updates as we are coming further along on the project.
+        </p>
+        <p>Citations:</p>
+        <p>“M1 Money Stock (DISCONTINUED).” FRED, 23 Mar. 2021, fred.stlouisfed.org/series/M1.</p>
+</div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+   </div>
+</body>
